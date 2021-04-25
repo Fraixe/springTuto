@@ -6,6 +6,10 @@ import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerF
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 
+/**
+ * @author Lucas
+ *Classe permettant de lancer l'application via un serveur Jetty
+ */
 public class JettyConfig {
 
 	@Bean

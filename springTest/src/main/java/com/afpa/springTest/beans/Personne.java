@@ -7,6 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author Lucas
+ *POJO avec 3 attributs
+ *un id , un nom et un prénom
+ */
 @Entity
 @Table(name="t_personne")
 public class Personne {

@@ -4,6 +4,10 @@ import java.util.Optional;
 
 import com.afpa.springTest.beans.Ville;
 
+/**
+ * @author Lucas
+ *Interface pour les méthodes utilisées pour manipuler les Villes
+ */
 public interface ServiceVilleInterface {
 
 	public Iterable<Ville> allVille();

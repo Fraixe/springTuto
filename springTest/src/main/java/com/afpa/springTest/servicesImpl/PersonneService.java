@@ -7,7 +7,11 @@ import com.afpa.springTest.beans.Personne;
 import com.afpa.springTest.repository.PersonneRepository;
 import com.afpa.springTest.services.ServicePersonneInterface;
 
-
+/**
+ * @author Lucas
+ * Implémentation concrete de l'interface ServicePersonneInterface 
+ * permettant de manipuler les personnes
+ */
 @Service
 public class PersonneService implements ServicePersonneInterface{
 

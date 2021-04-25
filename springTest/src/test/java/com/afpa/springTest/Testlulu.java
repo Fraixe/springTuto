@@ -17,7 +17,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.afpa.springTest.beans.Ville;
+import com.afpa.springTest.services.ServicePersonneInterface;
 import com.afpa.springTest.services.ServiceVilleInterface;
+import com.afpa.springTest.services.ServiceVoitureInterface;
 import com.afpa.springTest.servicesImpl.PersonneService;
 import com.afpa.springTest.servicesImpl.VoitureService;
 import com.google.common.net.HttpHeaders;
@@ -32,10 +34,10 @@ public class Testlulu {
 	ServiceVilleInterface villeService;
 
 	@Autowired
-	VoitureService voitureServ;
+	ServiceVoitureInterface voitureServ;
 
 	@Autowired
-	PersonneService personneServ;
+	ServicePersonneInterface personneServ;
 
 	@Autowired
 	MockMvc mockMvc;
@@ -54,4 +56,14 @@ public class Testlulu {
 		
 		assertEquals(2, villes.size());
 	}
+	
+	@Test
+	public void addOneVille() {
+						
+		Ville villeTest = villeService.addVille(new Ville("Paris"));
+		assertEquals("Paris", villeTest.getName());
+	}
+	
+
+	
 }

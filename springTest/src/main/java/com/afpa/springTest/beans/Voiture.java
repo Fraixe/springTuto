@@ -7,6 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+/**
+ * @author Lucas
+ * POJO avec 4 attributs
+ * un id, un nom, un prenom et un prix
+ */
 @Entity
 @Table(name ="t_Voiture")
 public class Voiture {
@@ -18,6 +24,7 @@ public class Voiture {
 	@Column(name = "name")
 	private String name;
 
+	
 	@Column(name = "marque")
 	private String marque;
 

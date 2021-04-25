@@ -7,6 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author Lucas
+ *POJO ville avec 2 attributs 
+ *un id et un nom
+ */
 @Entity
 @Table(name ="t_Ville")
 public class Ville {

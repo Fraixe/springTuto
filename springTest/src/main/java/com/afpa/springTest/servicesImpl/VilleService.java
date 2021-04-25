@@ -35,7 +35,7 @@ public class VilleService implements ServiceVilleInterface{
 
 	/**
 	 * Ajoute une ville dans la BDD
-	 * @param un objet ville a ajouter dans la BDD
+	 * @param ville un objet ville a ajouter dans la BDD
 	 * @return une ville qui a été ajouté dans la BDD avec l'ID crée de la BDD
 	 */
 	@Override
@@ -45,16 +45,17 @@ public class VilleService implements ServiceVilleInterface{
 
 	/**
 	 * Supprime une ville dans la BDD
-	 * @param un objet ville a supprimer dans la BDD
+	 * @param ville un objet ville a supprimer dans la BDD
 	 */
 	@Override
 	public void deleteVille(Ville ville) {
 		vr.delete(ville);
+		System.out.println("Ville supprimée !");
 	}
 
 	/**
 	 * Récupère une ville dans la BDD via son ID
-	 * @param un ID pour chercher une ville dans la BDD
+	 * @param id un ID pour chercher une ville dans la BDD
 	 * @return un optionnel ville 
 	 */
 	@Override

@@ -46,16 +46,25 @@ public class DataLoader implements ApplicationRunner{
 //		vs.deleteVille(villeToDelete);
 	}
 
+/**
+ * Ajoute les villes dans la BDD
+ */
 	public void initVille(){
 		Ville v1 = vs.addVille(new Ville("Toulouse"));
 		Ville v2 = vs.addVille(new Ville("Bordeaux"));
 	}
 	
+	/**
+	 * Ajoute les voitures dans la BDD
+	 */
 	public void initVoiture(){
 		Voiture vt1 = vtS.addVoiture(new Voiture("207","Peugeot",25000));
 		Voiture vt2 = vtS.addVoiture(new Voiture("4008","Peugeot",50000));
 	}
 	
+	/**
+	 * Ajoute les personnes dans la BDD
+	 */
 	public void initPersonne() {
 		Personne p1 = pS.addPersonne(new Personne("Lucas","Griggio"));
 	}

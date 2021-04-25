@@ -7,6 +7,11 @@ import com.afpa.springTest.beans.Voiture;
 import com.afpa.springTest.repository.VoitureRepository;
 import com.afpa.springTest.services.ServiceVoitureInterface;
 
+/**
+ * @author Lucas
+ * Implémentation concrete de l'interface ServiceVoitureInterface 
+ * permettant de manipuler les voitures
+ */
 @Service
 public class VoitureService implements ServiceVoitureInterface{
 
