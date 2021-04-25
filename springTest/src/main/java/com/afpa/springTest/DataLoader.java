@@ -10,8 +10,10 @@ import org.springframework.stereotype.Component;
 import com.afpa.springTest.beans.Personne;
 import com.afpa.springTest.beans.Ville;
 import com.afpa.springTest.beans.Voiture;
+import com.afpa.springTest.services.ServicePersonneInterface;
+import com.afpa.springTest.services.ServiceVilleInterface;
+import com.afpa.springTest.services.ServiceVoitureInterface;
 import com.afpa.springTest.servicesImpl.PersonneService;
-import com.afpa.springTest.servicesImpl.VilleService;
 import com.afpa.springTest.servicesImpl.VoitureService;
 
 @Component
@@ -20,11 +22,13 @@ public class DataLoader implements ApplicationRunner{
 
 	
 	@Autowired
-	VilleService vs;
+	ServiceVilleInterface vs;
+		
 	@Autowired
-	VoitureService vtS;
+	ServiceVoitureInterface vtS;
+	
 	@Autowired
-	PersonneService pS;
+	ServicePersonneInterface pS;
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
