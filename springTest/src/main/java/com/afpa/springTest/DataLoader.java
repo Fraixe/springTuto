@@ -16,6 +16,10 @@ import com.afpa.springTest.services.ServiceVoitureInterface;
 import com.afpa.springTest.servicesImpl.PersonneService;
 import com.afpa.springTest.servicesImpl.VoitureService;
 
+/**
+ * @author Lucas
+ *Classe permettant de charger des données dans la base de données
+ */
 @Component
 @Transactional
 public class DataLoader implements ApplicationRunner{

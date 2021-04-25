@@ -23,6 +23,11 @@ import com.afpa.springTest.repository.VoitureRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
+/**
+ * @author Lucas
+ *Controlleur utilisé pour un REST service sur ville, voiture, personne
+ *exposant des méthodes CRUD
+ */
 @Api(description="API pour es opérations CRUD sur les villes, voitures, personnes.")
 @RestController
 @RequestMapping("/api")
